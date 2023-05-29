@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="delicious.css">
+  </head>
+  <body>
+    <h2>Delicious Buffet Restaurent</h2>
+    <form action="" onsubmit="upload()" >
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <label for="">customer Name</label>
+            </td>
+            <td>
+              <input type="text " placeholder="Enter your name" id="name" />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for=""> Contact Number </label></td>
+            <td>
+              <input type="number" placeholder=" Enter your Mobile Number" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for=""> Date</label></td>
+            <td><input type="Date" /></td>
+          </tr>
+          <tr>
+            <td>Timing</td>
+            <td>
+              <input type="radio" id="a1" name="Date" />1-4pm 
+              <input type="radio"id="a2" name="Date" />4-7pm
+              <input type="radio" id="a3" name="Date"/>7-10pm
+            </td>
+          </tr>
+          <tr>
+            <td>Vegetarian</td>
+            <td>
+              <table class="tb1">
+                <tr>
+                  <td class="a">adults</td>
+                  <td class="b"><input type="number" id="vegadults" value="" /></td>
+                </tr>
+                <tr>
+                  <td class="c">Kids(5-9yrs)</td>
+                  <td class="d"><input type="number" id="vegkids" value="" /></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>Non-vegetarian</td>
+            <td>
+              <table class="tb2">
+                <tr>
+                  <td class="e">adults</td>
+                  <td class="f"><input type="number" id="nvadults" value="" /></td>
+                </tr>
+                <tr>
+                  <td class="g">Kids(6-9yrs)</td>
+                  <td class="h"><input type="number" id="nvkids" value="" /></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>Occasion</td>
+            <td> <input type="text">
+              <!-- <datalist id="occ"> -->
+            <!-- <option value="team dinner">
+              <option value="family reunion">
+                <option value="team lunch">
+                  <option value="celebration">
+                    <option value="birthday"> -->
+     </td>
+            <!-- <td><input type="text" /></td> -->
+          </tr>
+          <tr>
+            <td>Parking</td>
+            <td><input type="checkbox"  id="parking" value="10"/>Parking Required</td>
+          </tr></table> 
+          <tr>
+            <td><input type="submit" class="btn1" value="submit" /></td>
+            <td><button type="reset" class="btn2">Clear </button></td>
+          </tr>
+        </tbody>
+        </form>
+      
+    
+    <p id="result"></p>
+    <script src="./delicious.js"></script>
+  </body>
+</html>
